@@ -1,5 +1,3 @@
-console.log("Hello world!") // Testing ;) //
-
 const card1 = document.querySelector("#card1");
 
 card1.addEventListener("click", () => {
