@@ -146,6 +146,45 @@ main {
     transform: rotateY(-180deg);
 }
 
+#card3.flipCard {
+    transform: rotateY(-180deg);
+}
+
+#card3 {
+    
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 25px;
+   
+    width: 5%;
+    height: 100px;
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card3front, .card3back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.card3front {
+    background-image: url("./images/image.png");
+    background-size: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.card3back {
+    background-image: url(./images/battle-tank-side-view-isolated-transparent-background-military-tank-png-generative-ai_667511-4867.avif);
+    background-size: 100px;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(-180deg);
+}
+
 footer {
     position: fixed;
     bottom: 10px;
